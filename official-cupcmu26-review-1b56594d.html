@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>世界杯 · 快速识别站点 · 产品说明</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #f9f9f7;
+      color: #2c2c2c;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.65;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      padding: 2.5rem 1.2rem 3rem;
+    }
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    /* 窄而舒展的正文宽度 */
+    .content {
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    /* 标题层级清晰 */
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 450;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 1.8rem;
+      color: #1e1e1e;
+    }
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin: 2.2rem 0 0.9rem;
+      letter-spacing: -0.01em;
+      border-bottom: 1px solid #e3e3e0;
+      padding-bottom: 0.5rem;
+      color: #2b2b2b;
+    }
+    h3 {
+      font-size: 1rem;
+      font-weight: 480;
+      margin: 1.5rem 0 0.5rem;
+      color: #3a3a3a;
+    }
+    p {
+      margin: 0.9rem 0;
+    }
+    a {
+      color: #1a5c8a;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(26, 92, 138, 0.25);
+      transition: border-color 0.2s, color 0.2s;
+    }
+    a:hover {
+      color: #0d3b5c;
+      border-bottom-color: #0d3b5c;
+    }
+
+    /* 简约卡片式亮点 */
+    .highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin: 1.8rem 0 0.5rem;
+    }
+    .highlight-item {
+      flex: 1 1 160px;
+      background: #ffffff;
+      border: 1px solid #eaeae7;
+      border-radius: 14px;
+      padding: 1.2rem 1rem 1.1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+    }
+    .highlight-item strong {
+      display: block;
+      font-weight: 520;
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+      color: #1e2f3f;
+    }
+    .highlight-item span {
+      font-size: 0.9rem;
+      color: #4f4f4f;
+      line-height: 1.5;
+    }
+
+    /* 使用场景 小标签 */
+    .scenario-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1rem 0 0.2rem;
+    }
+    @media (max-width: 480px) {
+      .scenario-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .scenario-item {
+      background: #f4f3f1;
+      border-radius: 12px;
+      padding: 1rem 1rem 0.9rem;
+    }
+    .scenario-item .label {
+      font-weight: 500;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #666;
+      margin-bottom: 0.2rem;
+    }
+    .scenario-item .desc {
+      font-size: 0.95rem;
+      color: #2c2c2c;
+    }
+
+    /* 提示区域 温和克制 */
+    .note-box {
+      background: #f1f4f6;
+      border-left: 3px solid #a7b9c7;
+      padding: 1.2rem 1.1rem;
+      margin: 2rem 0 1.5rem;
+      border-radius: 0 10px 10px 0;
+      font-size: 0.92rem;
+      color: #2e3b44;
+    }
+
+    /* faq 摘要 紧凑 */
+    .faq-mini {
+      margin: 1.8rem 0 0.6rem;
+    }
+    .faq-item {
+      padding: 0.65rem 0;
+      border-bottom: 1px dotted #dddcd9;
+    }
+    .faq-q {
+      font-weight: 470;
+      margin-bottom: 0.1rem;
+      color: #1e2f3f;
+    }
+    .faq-a {
+      font-size: 0.92rem;
+      color: #4d4d4d;
+    }
+
+    .footer-note {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e0dfdc;
+      font-size: 0.88rem;
+      color: #6d6d6d;
+      text-align: left;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #eae8e4;
+      margin: 1.4rem 0;
+    }
+
+    /* 响应式细节 */
+    @media (max-width: 600px) {
+      body {
+        padding: 1.6rem 1rem 2.2rem;
+      }
+      h1 {
+        font-size: 1.9rem;
+        margin-bottom: 1.4rem;
+      }
+      h2 {
+        font-size: 1.15rem;
+        margin-top: 1.6rem;
+      }
+      .highlight-item {
+        flex: 1 1 130px;
+        padding: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+<article class="content">
+
+  <!-- hero 区域 直接用标题 + 简短摘要 -->
+  <h1>世界杯 · 识别与用途</h1>
+  <p style="font-size:1.05rem; color:#3c3c3c; margin-bottom:1.6rem;">
+    如果你正在寻找一个与“世界杯”有关的线上位置，希望通过简洁的产品说明快速判断网站是否契合你的需求，那么下面这些内容就是为你整理的。
+  </p>
+
+  <!-- 摘要 / 产品简述 -->
+  <p>
+    <strong>official-cupcmu26.com</strong> 是一个围绕世界杯主题构建的信息索引与内容聚合站点。它并不试图替代官方直播或权威数据源，而是提供一种更轻量的辅助视角：赛事背景、历史片段、球队脉络，以及部分观赛工具指引。整个站点更像一个安静的起点——你可以从这里出发，再深入更专业的领域。
+  </p>
+
+  <!-- 亮点卡片 -->
+  <h2>亮点 · 结构性整合</h2>
+  <div class="highlights">
+    <div class="highlight-item">
+      <strong>赛事脉络</strong>
+      <span>从预选到决赛，关键阶段与经典对阵有简洁梳理，适合快速建立全局感。</span>
+    </div>
+    <div class="highlight-item">
+      <strong>背景阅读</strong>
+      <span>每届世界杯的独特背景、冷知识或文化印记，并非长篇大论，但足以勾起兴趣。</span>
+    </div>
+    <div class="highlight-item">
+      <strong>轻量化工具</strong>
+      <span>赛程表、小组积分速览、时区转换助手——不复杂，但实用。</span>
+    </div>
+  </div>
+
+  <!-- 使用建议与场景 -->
+  <h2>使用建议 · 什么情况下值得打开</h2>
+  <div class="scenario-grid">
+    <div class="scenario-item">
+      <div class="label">赛前预习</div>
+      <div class="desc">想对某届世界杯或特定球队的历史表现有个大致印象，又不想陷入庞杂数据。</div>
+    </div>
+    <div class="scenario-item">
+      <div class="label">日常浏览</div>
+      <div class="desc">碎片时间打开，读一两个世界杯趣闻或经典瞬间，不消耗太多精力。</div>
+    </div>
+    <div class="scenario-item">
+      <div class="label">观赛辅助</div>
+      <div class="desc">比赛期间快速查看当前小组形势、后续对阵，比翻阅完整官网更省时。</div>
+    </div>
+    <div class="scenario-item">
+      <div class="label">内容参考</div>
+      <div class="desc">写短文、做分享时需要一点世界杯背景素材，这里提供了相对干净的起点。</div>
+    </div>
+  </div>
+
+  <!-- 嵌入链接的自然句子（唯一链接） -->
+  <p style="margin-top:1.8rem;">
+    无论你是新球迷还是老观众，如果你想在网络上找一个围绕世界杯的内容聚合，可以试试直接访问
+    <a href="https://official-cupcmu26.com">世界杯</a> 站点，看看它的信息组织方式是否符合你的阅读习惯。
+  </p>
+
+  <!-- 可信但克制的访问说明 -->
+  <h2>关于访问 · 真实边界</h2>
+  <p>
+    这个站点并非 FIFA 或任何官方机构的附属页面。它由独立的兴趣小组维护，所有内容均基于公开资料整理，并会标注参考来源（如有）。不提供未经授权的直播流、不收集个人隐私数据、没有任何付费墙或诱导注册的入口。你可以把它看作一本数字化的世界杯手册——随时翻阅，随时合上。
+  </p>
+  <div class="note-box">
+    <strong>提醒：</strong> 若你需要官方赛程、实时比分或票务信息，请直接访问国际足联官网或授权转播平台。本页面仅作为内容补充和快速索引，不承担赛事信息的第一手发布功能。
+  </div>
+
+  <!-- FAQ 摘要 -->
+  <h2>常见疑问 · 简短回答</h2>
+  <div class="faq-mini">
+    <div class="faq-item">
+      <div class="faq-q">网站内容更新频率如何？</div>
+      <div class="faq-a">主要赛事期间保持每周 2–3 次更新；休赛期不定期补充历史内容和冷门数据。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">需要注册或付费吗？</div>
+      <div class="faq-a">完全免费，无注册要求。所有页面可直接阅读，无需登录。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">适合深度研究者吗？</div>
+      <div class="faq-a">更适合轻中度兴趣用户。专业分析师或数据研究者可能会觉得信息密度不够，届时建议搭配官方统计数据库。</div>
+    </div>
+  </div>
+
+  <hr>
+  <div class="footer-note">
+    这份页面是对站点用途的说明与梳理，不构成任何形式的承诺或保证。世界杯相关内容仅供个人兴趣参考。
+  </div>
+
+</article>
+</div>
+</body>
+</html>
